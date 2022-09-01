@@ -35,7 +35,8 @@ namespace UltimateTeamApi
             app.UseCors(opt =>
             {
                 opt.WithOrigins("https://witty-coast-0875be403.1.azurestaticapps.net/")
-                .WithMethods("GET");
+                .WithMethods("GET")
+                .AllowAnyHeader();
             });
 
             app.UseAuthorization();
