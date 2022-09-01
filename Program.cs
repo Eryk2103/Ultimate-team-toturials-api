@@ -34,7 +34,7 @@ namespace UltimateTeamApi
 
             app.UseCors(opt =>
             {
-                opt.WithOrigins("http://localhost:4200")
+                opt.WithOrigins("https://witty-coast-0875be403.1.azurestaticapps.net/")
                 .WithMethods("GET");
             });
 
